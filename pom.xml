@@ -12,7 +12,7 @@
   <name>first-app</name>
   <!-- FIXME change it to the project's website -->
   <description>first-app print "Hello World"</description>
-  <url>http://www.example.com</url><!-- Need to pick up from Github -->
+  <url>https://github.com/AnneDroidd/first-app</url><!-- Need to pick up from Github -->
 
   <licenses>
     <license>
@@ -187,11 +187,11 @@
     </developer>
   </developers>
 
-  <!-- <scm>
-    <connection>scm:git:git://github.com/librbary/librbary-retry.git</connection>
-    <developerConnection>scm:git:ssh://github.com:librbary/librbary-retry.git</developerConnection>
-    <url>https://github.com/librbary/librbary-retry</url>
-  </scm> -->
+  <scm>
+    <connection>scm:git:git://github.com/AnneDroidd/first-app</connection>
+    <developerConnection>scm:git:ssh://github.com:AnneDroidd/first-app</developerConnection>
+    <url>https://github.com/AnneDroidd/first-app</url>
+  </scm>
   <!-- Check Github -->
 
 </project>

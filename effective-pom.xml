@@ -18,7 +18,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>first-app</name>
   <description>first-app print "Hello World"</description>
-  <url>http://www.example.com</url>
+  <url>https://github.com/AnneDroidd/first-app</url>
   <licenses>
     <license>
       <name>MIT License</name>
@@ -33,6 +33,11 @@
       <organizationUrl>https://github.com/AnneDroidd</organizationUrl>
     </developer>
   </developers>
+  <scm>
+    <connection>scm:git:git://github.com/AnneDroidd/first-app</connection>
+    <developerConnection>scm:git:ssh://github.com:AnneDroidd/first-app</developerConnection>
+    <url>https://github.com/AnneDroidd/first-app</url>
+  </scm>
   <distributionManagement>
     <repository>
       <id>ossrh</id>
