@@ -133,6 +133,9 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.11.0</version>
+          <configuration>
+            <release>17</release>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -295,6 +298,9 @@
             <goals>
               <goal>compile</goal>
             </goals>
+            <configuration>
+              <release>17</release>
+            </configuration>
           </execution>
           <execution>
             <id>default-testCompile</id>
@@ -302,8 +308,14 @@
             <goals>
               <goal>testCompile</goal>
             </goals>
+            <configuration>
+              <release>17</release>
+            </configuration>
           </execution>
         </executions>
+        <configuration>
+          <release>17</release>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
