@@ -7,15 +7,14 @@
 <!-- ====================================================================== -->
 <!-- ====================================================================== -->
 <!--                                                                        -->
-<!-- Effective POM for project                                              -->
-<!-- 'io.github.annedroidd:first-app:jar:1.0-SNAPSHOT'                      -->
+<!-- Effective POM for project 'io.github.annedroidd:first-app:jar:1.0.0'   -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.annedroidd</groupId>
   <artifactId>first-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>first-app</name>
   <description>first-app print "Hello World"</description>
   <url>https://github.com/AnneDroidd/first-app</url>
@@ -34,8 +33,8 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/AnneDroidd/first-app</connection>
-    <developerConnection>scm:git:ssh://github.com:AnneDroidd/first-app</developerConnection>
+    <connection>scm:git:git://github.com/AnneDroidd/first-app.git</connection>
+    <developerConnection>scm:git:ssh://github.com:AnneDroidd/first-app.git</developerConnection>
     <url>https://github.com/AnneDroidd/first-app</url>
   </scm>
   <distributionManagement>
@@ -103,7 +102,7 @@
       </testResource>
     </testResources>
     <directory>c:\Users\sroy\Documents\vscode_projects\first-app\target</directory>
-    <finalName>first-app-1.0-SNAPSHOT</finalName>
+    <finalName>first-app-1.0.0</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -160,6 +159,16 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.4.0</version>
+          <extensions>true</extensions>
+          <configuration>
+            <publishingServerId>central</publishingServerId>
+            <tokenAuth>true</tokenAuth>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.sonatype.plugins</groupId>
@@ -228,16 +237,6 @@
               </configuration>
             </execution>
           </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.sonatype.central</groupId>
-          <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>2.2.1</version>
-          <extensions>true</extensions>
-          <configuration>
-            <publishingServerId>central</publishingServerId>
-            <tokenAuth>true</tokenAuth>
-          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
